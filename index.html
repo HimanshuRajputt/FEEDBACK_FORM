@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>FeedBack Form</h2>
+    <form action="#" method="post">
+
+        <label for="feedback-type">Feedback Type:</label>
+        <select  id="feedback-type" name="feedback-type">
+            <option value="general">General</option>
+            <option value="bug">Report a Bug</option>
+            <option value="feature">Request a Feature</option>
+        </select>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" rows="5" cols="30" required> </textarea>
+
+        <!-- Radio button -->
+         <label>Website Rating:</label>
+         <div class="radio_container">
+            <input type="radio" id="poor" name="rating" value="poor" required>
+            <label for="poor">Poor</label>
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+
+            <input type="radio" id="excellent" name="rating" value="excellent">
+            <label for="excellent">Excellent</label>
+         </div>
+        
+         <!-- input ofr age -->
+          <label for="age">Your Age <span style="color: red;">*</span> :</label>
+          <input type="number" id="age" name="age" min="10" max="100" required >
+          <!-- Email Input Field -->
+           <label for="email">Email <span style="color: red;">*</span> :</label>
+           <input type="email" id="email" name="email" required>
+       
+           <!-- Password Input Field -->
+           <label for="password">Password (min 8 characters) <span style="color: red;">*</span> :</label>
+           <input type="password" id="password" name="password" minlength="8">
+       
+           <!-- Optional Website URL Input Field -->
+           <label for="website">Your Website <span style="color: red;">*</span> :</label>
+           <input type="url" id="website" name="website">
+
+           <!-- checkbox of T&C -->
+            <div class="chekbox_container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <button type="submit"> Submit Feedback </button>
+
+        <!-- <input type="text" id="name" name="name" required> -->
+    </form>
+</body>
+</html>
